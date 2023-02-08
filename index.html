@@ -9,15 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <script>document.documentElement.className += ' js'</script>
 </head>
 
 <body>
     <div class="header-bg">
         <header class="header container">
             <a href="#"><img src="img/rodrigo-logo.svg" alt="Logo Rodrigo Moreira"></a>
-            <nav class="menu">
+            <nav class="menu js-menu">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -28,7 +29,7 @@
             </nav>
         </header>
 
-        <div class="header-conteudo container">
+        <div class="header-conteudo container js-scroll">
 
             <div class="conteudo">
                 <h1 class="font-titulo-g">Rodrigo <span>Moreira.</span></h1>
@@ -45,8 +46,8 @@
     </div>
 
     <div class="sobre-bg">
-        <h1 class="titulo font-titulo-p">Sobre</h1>
-        <section class="sobre container" id="sobre">
+        <h1 class="titulo font-titulo-p js-scroll">Sobre</h1>
+        <section class="sobre container js-scroll" id="sobre">
             <div class="sobre-conteudo">
                 <p>Eu sempre tive uma ligação com a tecnologia desde a minha infância, desde jogos até computadores. Desde então, tenho procurado adquirir mais conhecimento nesta área. </p>
 
@@ -58,7 +59,7 @@
         </section>
     </div>
 
-    <section class="projetos container" id="projetos">
+    <section class="projetos container js-scroll" id="projetos">
         <h1 class="titulo font-titulo-p">Projetos</h1>
 
         <div class="projetos-card">
@@ -95,7 +96,7 @@
     </section>
 
     <div class="formacao-bg">
-        <section class="formacao container" id="formacao">
+        <section class="formacao container js-scroll" id="formacao">
             <h1 class="titulo font-titulo-p">Formação</h1>
             <div class="formacao-conteudo">
                 <p>Minha mais recente experiência acadêmica
@@ -148,7 +149,7 @@
 
 
     <div class="skills-bg">
-        <section class="skills container" id="skills">
+        <section class="skills container js-scroll" id="skills">
             <h1 class="titulo font-titulo-p">Skills</h1>
             <p>Durante meus estudos, aprendi habilidades de desenvolvimento e continuo me aperfeiçoando diariamente para adquirir mais conhecimento e me tornar um profissional ainda melhor.</p>
             <div class="flex-container">
@@ -219,7 +220,7 @@
     </div>
 
     <div class="contatos-bg">
-        <footer class="contatos container" id="contatos">
+        <footer class="contatos container js-scroll" id="contatos">
             <div class="contatos-conteudo">
                 <p>Disponível para novos projetos.
                     Entre em contato e marcamos uma conversa 🖖</p>

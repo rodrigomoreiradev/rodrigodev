@@ -1,5 +1,6 @@
 @import url("global.css");
 @import url("mediaquery.css");
+@import url("animacao.css");
 
 /* utilidades */
 @import url("utilidades/cores.css");
