@@ -1,0 +1,35 @@
+@media (max-width: 890px) {
+  .circulo {
+    display: none;
+  }
+  .header {
+    margin-bottom: 32px;
+  }
+  .header-conteudo {
+    padding-bottom: 32px;
+  }
+}
+@media (max-width: 690px) {
+  .header-conteudo h1 {
+    font-size: 3rem;
+  }
+  .header-conteudo h2 {
+    font-size: 2rem;
+  }
+  .header-conteudo p {
+    font-size: 1rem;
+  }
+  .titulo {
+    padding: 30px 10px;
+    text-align: left;
+  }
+  .titulo::after {
+    margin: 0;
+  }
+  .sobre a.botao {
+    display: none;
+  }
+  .sobre a.botao-oculto {
+    display: block;
+  }
+}

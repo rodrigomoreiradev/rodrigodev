@@ -1,0 +1,14 @@
+@import url("global.css");
+@import url("mediaquery.css");
+
+/* utilidades */
+@import url("utilidades/cores.css");
+@import url("utilidades/tipografia.css");
+
+/* Principal */
+@import url("principal/header.css");
+@import url("principal/sobre.css");
+@import url("principal/projetos.css");
+@import url("principal/skills.css");
+@import url("principal/contatos.css");
+@import url("principal/formacao.css");

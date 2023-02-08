@@ -1,0 +1,41 @@
+.contatos-bg {
+  background: var(--cor09);
+}
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contatos-conteudo {
+  padding: 32px;
+}
+.contatos-conteudo p {
+  padding-bottom: 16px;
+  max-width: 400px;
+  color: var(--cor03);
+}
+.contatos-gerais {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  color: var(--cor03);
+}
+.contatos-gerais a {
+  display: block;
+  color: var(--cor01);
+  padding: 8px 16px;
+  transition: 0.5s;
+}
+.contatos-gerais a:hover {
+  transform: scale(1.1);
+}
+.contatos-gerais a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background: var(--primaria-01);
+  margin-right: 4px;
+}

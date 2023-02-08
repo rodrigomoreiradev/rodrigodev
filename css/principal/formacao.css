@@ -1,0 +1,70 @@
+.formacao-bg {
+  background: var(--cor10);
+}
+.formacao {
+  padding-bottom: 60px;
+}
+.formacao h1 {
+  color: var(--cor01);
+}
+.formacao-conteudo {
+  margin: 0px 0px 60px 10px;
+  font-size: 1.5rem;
+  color: var(--cor03);
+}
+.formacao-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--cor01);
+  padding: 32px;
+}
+.formacao-box .curso {
+  flex: 1 1 260px;
+  background: var(--cor09);
+  padding: 32px;
+  margin: 16px;
+  width: 300px;
+  height: 230px;
+  border-radius: 5px;
+  border: 1px solid var(--primaria-01);
+}
+.curso h2 {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+}
+.curso p {
+  font-size: 1.2rem;
+}
+.curso p + p {
+  padding-top: 64px;
+  font-size: 1.5rem;
+}
+.complementar {
+  color: var(--cor03);
+}
+.complementar h2 {
+  color: var(--cor01);
+  text-align: center;
+  max-width: max-content;
+  padding-left: 50px;
+  padding-bottom: 8px;
+  position: relative;
+}
+.complementar h2::after {
+  content: "";
+  display: block;
+  background: var(--gradiente);
+  width: 100%;
+  height: 1px;
+}
+.complementar li {
+  border-bottom: 1px solid var(--cor09);
+  padding: 8px 0px;
+}
+.complementar-box {
+  max-width: 350px;
+  color: var(--cor01);
+  display: flex;
+  justify-content: space-around;
+}

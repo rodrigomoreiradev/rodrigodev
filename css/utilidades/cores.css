@@ -1,0 +1,22 @@
+:root {
+  /* Cor primaria */
+  --primaria-01: #f3d535;
+  --primaria-02: #e9ba06;
+  --primaria-03: #d09600;
+  --primaria-04: #bb7b00;
+  --primaria-05: #302500;
+  --gradiente: linear-gradient(180deg, #f3d535 0%, #d09600 100%);
+
+  /* Cor secundaria */
+  --white: #ffffff;
+  --cor01: #e6e6e6;
+  --cor02: #cccccc;
+  --cor03: #b3b3b3;
+  --cor04: #999999;
+  --cor05: #808080;
+  --cor06: #666666;
+  --cor07: #4d4d4d;
+  --cor08: #333333;
+  --cor09: #1a1a1a;
+  --cor10: #000000;
+}

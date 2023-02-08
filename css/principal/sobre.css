@@ -1,0 +1,46 @@
+.sobre-bg {
+  background: var(--cor10);
+  color: var(--white);
+}
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sobre-conteudo {
+  flex: 1 1 360px;
+}
+.sobre-conteudo p {
+  padding: 0px 24px 24px 10px;
+  font-size: 1.2rem;
+}
+.header-imagem {
+  flex: 1 1 360px;
+  border-radius: 5px;
+}
+.header-imagem img {
+  border-radius: 5px;
+}
+.botao {
+  display: block;
+  width: max-content;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primaria-05);
+  background: linear-gradient(180deg, #f3d535 0%, #d09600 100%);
+  padding: 16px 32px;
+  margin: 120px 10px;
+  border-radius: 5px;
+}
+.botao-oculto {
+  display: none;
+  color: var(--primaria-05);
+  padding: 16px 32px;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.botao:hover {
+  background: var(--primaria-03);
+}
+.botao-oculto:hover {
+  background: var(--primaria-03);
+}

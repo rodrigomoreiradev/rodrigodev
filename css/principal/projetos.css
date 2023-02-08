@@ -1,0 +1,43 @@
+.projetos-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+.projetos-itens {
+  flex: 0 1 290px;
+  background: var(--white);
+  box-shadow: 0px 0px 10px var(--cor01);
+  padding: 10px;
+  border-radius: 5px;
+}
+.projetos-itens img {
+  border-radius: 5px 5px 0px 0px;
+  opacity: 0.8;
+  filter: blur(0.5px);
+  transition: 0.3s;
+}
+.projetos-itens img:hover {
+  opacity: 1;
+  filter: blur(0px);
+}
+.projetos-itens h2 {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: var(--cor09);
+}
+.projetos-itens h2::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 20px;
+  height: 10px;
+  background: var(--gradiente);
+}
+.projetos-itens p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: var(--cor07);
+}
