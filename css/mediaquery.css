@@ -26,10 +26,4 @@
   .titulo::after {
     margin: 0;
   }
-  .sobre a.botao {
-    display: none;
-  }
-  .sobre a.botao-oculto {
-    display: block;
-  }
 }
