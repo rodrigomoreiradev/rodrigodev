@@ -1,70 +1,88 @@
-.formacao-bg {
-  background: var(--cor10);
-}
 .formacao {
-  padding-bottom: 60px;
+  padding: 16px;
 }
 .formacao h1 {
-  color: var(--cor01);
-}
-.formacao-conteudo {
-  margin: 0px 0px 60px 10px;
-  font-size: 1.5rem;
-  color: var(--cor03);
-}
-.formacao-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: var(--cor01);
-  padding: 32px;
-}
-.formacao-box .curso {
-  flex: 1 1 260px;
-  background: var(--cor09);
-  padding: 32px;
-  margin: 16px;
-  width: 300px;
-  height: 230px;
-  border-radius: 5px;
-  border: 1px solid var(--primaria-01);
-}
-.curso h2 {
-  font-size: 1.5rem;
-  padding-bottom: 8px;
-}
-.curso p {
-  font-size: 1.2rem;
-}
-.curso p + p {
-  padding-top: 64px;
-  font-size: 1.5rem;
-}
-.complementar {
-  color: var(--cor03);
-}
-.complementar h2 {
-  color: var(--cor01);
+  color: var(--cor09);
+  padding: 8px 0px;
   text-align: center;
-  max-width: max-content;
-  padding-left: 50px;
-  padding-bottom: 8px;
-  position: relative;
 }
-.complementar h2::after {
+.formacao h1::after {
   content: "";
   display: block;
-  background: var(--gradiente);
-  width: 100%;
-  height: 1px;
+  width: 200px;
+  height: 2px;
+  background: var(--primaria-01);
+  margin: 0 auto;
 }
-.complementar li {
-  border-bottom: 1px solid var(--cor09);
-  padding: 8px 0px;
+.formacao p {
+  color: var(--cor06);
+  padding-top: 16px;
+  font-size: 1.25rem;
 }
-.complementar-box {
-  max-width: 350px;
-  color: var(--cor01);
+.formacao-card {
+  padding: 16px;
+  margin: 16px 0px;
+  border-radius: 5px;
+}
+.formacao-card .card {
+  border: 1px solid var(--primaria-01);
+  background: var(--white);
+  margin: 32px 10px;
+  padding: 8px;
+}
+.formacao-card .card h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--cor09);
+}
+.formacao-card .card p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.formacao-card .card p + p {
+  padding-top: 60px;
+  font-weight: bold;
+  color: var(--cor09);
+}
+.complementar-titulo {
+  text-align: center;
+  padding-bottom: 8px;
+}
+.complementar {
   display: flex;
   justify-content: space-around;
+  padding: 16px;
+  border: 1px solid var(--primaria-01);
+  width: 500px;
+  margin: 16px auto;
+}
+.complementar li {
+  border-bottom: 1px solid var(--cor01);
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--cor08);
+}
+@media (min-width: 768px) {
+  .formacao h1 {
+    padding: 32px 0px;
+  }
+  .formacao-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 1 1 260px;
+  }
+}
+@media (min-width: 1024px) {
+  .formacao {
+    max-width: 1200px;
+    margin: 60px auto;
+  }
+  .formacao h1 {
+    margin-bottom: 60px;
+  }
 }

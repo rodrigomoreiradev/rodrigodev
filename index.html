@@ -9,242 +9,199 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-    <script>document.documentElement.className += ' js'</script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.className += ' js' </script>
 </head>
 
 <body>
-    <div class="header-bg">
-        <header class="header container">
-            <a href="#"><img src="img/rodrigo-logo.svg" alt="Logo Rodrigo Moreira"></a>
-            <nav class="menu js-menu">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
-            </nav>
-        </header>
+    <div class="grid">
+        <div class="header-bg">
+            <header class="header">
+                <img src="img/rodrigo-logo.svg" alt="Rodrigo Moreira">
 
-        <div class="header-conteudo container js-scroll">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </nav>
 
-            <div class="conteudo">
-                <h1 class="font-titulo-g">Rodrigo <span>Moreira.</span></h1>
-                <h2 class="font-titulo-m">Desenvolvedor Front End <br><span>&</span> UI Designer.</h2>
-                <p>localizado em São Paulo 🏙</p>
-            </div>
-
-            <div class="circulo">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                <div class="header-conteudo js-scroll">
+                    <h1 class="font-titulo-g">Rodrigo <span>Moreira.</span> </h1>
+                    <h2 class="font-titulo-m">Desenvolvedor <br> Front End <span>&</span> UI Designer.</h2>
+                    <p>localizado em São Paulo 🏙</p>
+                </div>
+            </header>
         </div>
-    </div>
 
-    <div class="sobre-bg">
-        <h1 class="titulo font-titulo-p js-scroll">Sobre</h1>
-        <section class="sobre container js-scroll" id="sobre">
-            <div class="sobre-conteudo">
-                <p>Eu sempre tive uma ligação com a tecnologia desde a minha infância, desde jogos até computadores. Desde então, tenho procurado adquirir mais conhecimento nesta área. </p>
+        <div class="sobre-bg">
+            <section class="sobre js-scroll" id="sobre">
+                <h1 class="font-titulo-p">Sobre</h1>
+                <div class="sobre-box">
+                    <div class="sobre-conteudo">
+                        <p>Eu sempre tive uma ligação com a tecnologia desde a minha infância, desde jogos até computadores. Desde então, tenho procurado adquirir mais conhecimento nesta área.
 
-                <p>Atualmente, estou estudando Sistemas para Internet e isso me fez amar ainda mais esta área. Eu espero poder compartilhar os conhecimentos que adquiri, pois para mim, além de ser uma mudança em minha carreira, também é a oportunidade de trabalhar com algo que eu amo.</p>
-            </div>
-            <div class="header-imagem">
-                <img src="img/foto-perfil.jpg" alt="Foto Desenvolvedor">
-            </div>
-        </section>
-    </div>
+                        <p>Atualmente, estou estudando Sistemas para Internet e isso me fez amar ainda mais esta área. Eu espero poder compartilhar os conhecimentos que adquiri, pois para mim, além de ser uma mudança em minha carreira, também é a oportunidade de trabalhar com algo que eu amo</p>
+                    </div>
 
-    <section class="projetos container js-scroll" id="projetos">
-        <h1 class="titulo font-titulo-p">Projetos</h1>
+                    <div class="sobre-img">
+                        <img src="img/foto-perfil.jpg" alt="Foto Dev">
+                    </div>
+                </div>
 
-        <div class="projetos-card">
-            <div class="projetos-itens">
+            </section>
+        </div>
 
-                <a href="https://rodrigomoreiradev.github.io/bikcraft/" target="_blank"><img src="img/bikcraft.jpg" alt="Bikcraft">
-                </a>
-                <a href="https://rodrigomoreiradev.github.io/bikcraft/" target="_blank">
-                    <h2>Bikcraft</h2>
-                </a>
-                <p>Pequenos projetos criado utilizando apenas HTML, Css e JavaScript. Também trabalhei no UX e UI Design do projeto.</p>
-            </div>
+        <div class="projetos-bg">
+            <section class="projetos js-scroll" id="projetos">
+                <h1 class="font-titulo-p">Projetos</h1>
 
-            <div class="projetos-itens">
-                <div>
-                    <a href="https://rodrigomoreiradev.github.io/projeto-cordel/" target="_blank"><img src="img/projeto-cordel.jpg" alt="Projeto Cordel"></a>
-                    <a href="https://rodrigomoreiradev.github.io/projeto-cordel/" target="_blank">
+                <div class="projetos-card">
+
+                    <div class="projetos-item">
+                        <a href="#"><img src="img/bikcraft.jpg" alt="Projeto Bikcraft"></a>
+                        <h2>Bikcraft</h2>
+                        <p>Pequenos projetos criado utilizando apenas HTML, Css e JavaScript. Também trabalhei no UX e UI Design do projeto.</p>
+                    </div>
+
+                    <div class="projetos-item">
+                        <a href="#"><img src="img/projeto-cordel.jpg" alt="Projeto Cordel"></a>
                         <h2>Cordel Moderno</h2>
-                    </a>
-                    <p>Desenvolvi esse pequeno projeto acadêmico utilizando apenas HTML,CSS e um fundo paralax.</p>
-                </div>
-            </div>
+                        <p>Desenvolvi esse pequeno projeto acadêmico utilizando apenas HTML,CSS e um fundo paralax.</p>
+                    </div>
 
-            <div class="projetos-itens">
-                <div>
-                    <a href="https://rodrigomoreiradev.github.io/projeto-android/" target="_blank""><img src=" img/projeto-android.jpg" alt="Projeto Android Tec"></a>
-                    <a href="https://rodrigomoreiradev.github.io/projeto-android/" target="_blank">
+                    <div class="projetos-item">
+                        <a href="#"><img src="img/projeto-android.jpg" alt="Projeto Android"></a>
                         <h2>Curiosidades de tec</h2>
-                    </a>
-                    <p>Projeto criado com HTML e CSS, contando um pouco da história do android.</p>
+                        <p>Projeto criado com HTML e CSS, contando um pouco da história do android.</p>
+                    </div>
+
                 </div>
-            </div>
+
+            </section>
         </div>
-    </section>
 
-    <div class="formacao-bg">
-        <section class="formacao container js-scroll" id="formacao">
-            <h1 class="titulo font-titulo-p">Formação</h1>
-            <div class="formacao-conteudo">
-                <p>Minha mais recente experiência acadêmica
-                    é um Tecnólogo 🎓 em sistemas para internet
-                    e também um curso intensivo de web design
-                    online. Além disso me mantenho sempre atualizado
-                    com cursos intensivos online.</p>
-            </div>
 
-            <div class="formacao-box">
+        <section class="formacao js-scroll" id="formacao">
+            <h1 class="font-titulo-p">Formação</h1>
+            <p>Minha mais recente experiência acadêmica é um Tecnólogo 🎓 em sistemas para internet e também um curso intensivo de web design online. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
 
-                <div class="curso">
-                    <h2 class="font-titulo-p">Tecnólogo</h2>
+            <div class="formacao-card">
+                <div class="card">
+                    <h2>Tecnólogo</h2>
                     <p>Sistemas para Internet</p>
                     <p>Faculdade Descomplica</p>
                 </div>
 
-                <div class="curso">
-                    <h2 class="font-titulo-p">Complementar</h2>
+                <div class="card">
+                    <h2>Front End</h2>
                     <p>Web Design</p>
-                    <p>Origamid</p>
+                    <p>OrigamiD</p>
                 </div>
 
-                <div class="curso">
-                    <h2 class="font-titulo-p">Técnico</h2>
+                <div class="card">
+                    <h2>Técnico</h2>
                     <p>Programação</p>
                     <p>Etec</p>
                 </div>
             </div>
+            <h2 class="complementar-titulo">Cursos complementares</h2>
             <div class="complementar">
-                <h2>Complementar</h2>
-                <div class="complementar-box">
-
-                    <ul>
-                        <li>UI Design</li>
-                        <li>HTML e CSS</li>
-                        <li>Flexbox</li>
-                        <li>CSS Grid Layout</li>
-                    </ul>
-                    <ul>
-                        <li>34H</li>
-                        <li>46H</li>
-                        <li>06H</li>
-                        <li>10H</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>UI Design</li>
+                    <li>HTML e CSS </li>
+                    <li>Flexbox</li>
+                    <li>CSS Grid Layout</li>
+                </ul>
+                <ul>
+                    <li>34H</li>
+                    <li>46H</li>
+                    <li>06H</li>
+                    <li>10H</li>
+                </ul>
             </div>
+
         </section>
-    </div>
 
 
-    <div class="skills-bg">
-        <section class="skills container js-scroll" id="skills">
-            <h1 class="titulo font-titulo-p">Skills</h1>
-            <p>Durante meus estudos, aprendi habilidades de desenvolvimento e continuo me aperfeiçoando diariamente para adquirir mais conhecimento e me tornar um profissional ainda melhor.</p>
-            <div class="flex-container">
+        <div class="skills-bg">
+            <section class="skills js-scroll" id="skills">
+                <h1 class="font-titulo-p">Skills</h1>
+                <p>Durante meus estudos, aprendi habilidades de desenvolvimento e continuo me aperfeiçoando diariamente para adquirir mais conhecimento e me tornar um profissional ainda melhor.</p>
+
                 <div class="skills-box">
 
-                    <div class="skills-item">
-                        <p>HTML</p>
-                        <p>90%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-html skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-html progress"></div>
                         </div>
+                        <span class="value">80%</span>
                     </div>
 
-                    <div class="skills-item">
-                        <p>Css</p>
-                        <p>70%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-css skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">Css</span>
+                        <div class="skill-bar">
+                            <div class="skill-css progress"></div>
                         </div>
+                        <span class="value">70%</span>
                     </div>
 
-                    <div class="skills-item">
-                        <p>JavaScript</p>
-                        <p>50%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-js skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-js progress"></div>
                         </div>
+                        <span class="value">50%</span>
                     </div>
 
-                    <div class="skills-item">
-                        <p>Figma</p>
-                        <p>80%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-figma skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-bar">
+                            <div class="skill-figma progress"></div>
                         </div>
+                        <span class="value">70%</span>
                     </div>
 
-                    <div class="skills-item">
-                        <p>Git</p>
-                        <p>50%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-git skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">Github</span>
+                        <div class="skill-bar">
+                            <div class="skill-github progress"></div>
                         </div>
+                        <span class="value">50%</span>
                     </div>
 
-                    <div class="skills-item">
-                        <p>Github</p>
-                        <p>50%</p>
-                    </div>
-                    <div class="skills-bar">
-                        <div class="skill-gitH skill-bar">
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-git progress"></div>
                         </div>
+                        <span class="value">50%</span>
                     </div>
 
-                </div cla>
-                <div class="circulo">
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
 
-    <div class="contatos-bg">
-        <footer class="contatos container js-scroll" id="contatos">
-            <div class="contatos-conteudo">
-                <p>Disponível para novos projetos.
+        <div class="contatos-bg">
+            <footer class="contatos js-scroll" id="contatos">
+                <p class="footer-conteudo">Disponível para novos projetos.
                     Entre em contato e marcamos uma conversa 🖖</p>
-                <p>Rodrigo Moreira © Todos direitos reservados.</p>
-            </div>
 
-            <div class="contatos-gerais">
-                <p>
-                    <a href="mailto:rodrigojs20@gmail.com">rodrigojs20@gmail.com</a>
-                </p>
+                <ul>
+                    <li><a href="#">rodrigojs20@gmail.com</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">(11) 965491318</a></li>
+                </ul>
 
-                <p>
-                    <a href="https://github.com/rodrigomoreiradev" target="_blank">github</a>
-                </p>
-
-                <p>
-                    <a href="tel:+5511965491318">(11) 965491318</a>
-                </p>
-            </div>
-
-        </footer>
+                <p class="copy">Rodrigo Moreira<span> © </span>Todos direitos reservados.</p>
+            </footer>
+        </div>
     </div>
-
-    <script src="js/script.js"></script>
+    <script src="javascript/js.js"></script>
 </body>
 
 </html>

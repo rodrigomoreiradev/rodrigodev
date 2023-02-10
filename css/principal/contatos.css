@@ -2,40 +2,57 @@
   background: var(--cor09);
 }
 .contatos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 16px;
 }
-.contatos-conteudo {
-  padding: 32px;
+.contatos p {
+  color: var(--cor04);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
 }
-.contatos-conteudo p {
-  padding-bottom: 16px;
-  max-width: 400px;
-  color: var(--cor03);
+.contatos a {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 4px;
+  color: var(--cor02);
 }
-.contatos-gerais {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  color: var(--cor03);
+.contatos a:hover {
+  color: var(--primaria-01);
 }
-.contatos-gerais a {
-  display: block;
-  color: var(--cor01);
-  padding: 8px 16px;
-  transition: 0.5s;
-}
-.contatos-gerais a:hover {
-  transform: scale(1.1);
-}
-.contatos-gerais a::before {
+.contatos a::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 10px;
+  margin-right: 8px;
   background: var(--primaria-01);
-  margin-right: 4px;
+  transition: 0.5s;
+}
+.contatos a:hover::before {
+  width: 30px;
+  box-shadow: 0px 0px 5px var(--primaria-01), 0px 0px 10px var(--primaria-01);
+}
+.contatos .copy {
+  font-size: 1rem;
+  padding-top: 16px;
+  color: var(--cor06);
+}
+.contatos span {
+  color: var(--primaria-01);
+  margin-top: 16px;
+}
+@media (min-width: 1024px) {
+  .contatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 60px auto;
+  }
+  .footer-conteudo,
+  .contatos ul,
+  .copy {
+    margin: 0px 32px;
+  }
+  .contatos ul {
+    justify-self: center;
+  }
 }
